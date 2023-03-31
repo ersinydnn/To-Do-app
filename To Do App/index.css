@@ -1,0 +1,127 @@
+.completed .todoText {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Input styling */
+  .inputContents {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .todoInput {
+    width: 60%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .addTask {
+    padding: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .addTask:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* List styling */
+  .todos {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  
+  .todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .todoItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .todoText {
+    margin: 0;
+    font-size: 1.2rem;
+    flex: 1;
+  }
+  
+  .completeButton,
+  .deleteButton {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .completeButton {
+    background-color: #2196f3;
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .completeButton:hover {
+    background-color: #0e8ddb;
+  }
+  
+  .completed .completeButton {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .deleteButton {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .deleteButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media (max-width: 768px) {
+    .inputContents {
+      flex-direction: column;
+    }
+  
+    .todoInput {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+  
+    .addTask {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  
